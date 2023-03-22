@@ -21,7 +21,7 @@ jobs:
             - run: npm i npm@latest
             - run: npm i
             - name: run test
-              run: npm run cy:run
+              run: npm run cy:report
             - name: Upload artifact cucumber-report
               uses: actions/upload-artifact@v3
               if: always()
